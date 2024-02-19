@@ -1,6 +1,18 @@
-# Automation Test Suite
+# Baixar o projeto do GIT
+ Ao baixar o repositório git clone https://github.com/yaraviana/Teste.git, é necessário ajustar as seguintes linhas nos arquivos cadastro.robot, compra.robot e login.robot localizado na pasta PageObjetive:
 
-Este projeto contém testes automatizados para a funcionalidade de Login e Compra no site [http://www.automationpractice.pl](http://www.automationpractice.pl).
+Resource         C:/TesteTec/ProjetoTecnico/Resources/cadastro_resource.robot
+Resource         C:/TesteTec/ProjetoTecnico/Resources/login_resources.robot
+
+Para refletir o novo local onde você baixou o repositório, altere essas linhas para o caminho atual do projeto. Por exemplo, se o repositório foi baixado na pasta C:\caminho\para\seu\diretorio\Teste, as linhas seriam ajustadas para:
+
+Resource         C:/caminho/para/seu/diretorio/Teste/Resources/cadastro_resource.robot
+Resource         C:/caminho/para/seu/diretorio/Teste/Resources/login_resources.robot
+
+
+# Automação de Testes
+
+Este projeto contém testes automatizados para a funcionalidade de Login e Compra e Cadastro no site [http://www.automationpractice.pl](http://www.automationpractice.pl).
 
 ## Configuração do Ambiente
 
@@ -19,13 +31,8 @@ Este projeto contém testes automatizados para a funcionalidade de Login e Compr
 - keywords: Contém palavras-chave comuns.
 - README.md: Instruções de configuração e execução.
 
-## Execução dos Testes
-
--Iportante o projeto estar na pasta C: do computador, pois o caminho dos Resources estão com esse caminho, caso abra o projeto de outro diretorio, alterar o caminho dos resources.
-
-
 ## Execução dos testes
-No cmd navegue até a pasta C:\TesteTec\ProjetoTecnico\PageObjetive>
+No cmd navegue até a pasta onde foi baixado o projeto
 
 1.Dê o comando robot login.robot para executar todos os cenários de login
 	Executar apenas um teste específico da suíte
